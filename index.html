@@ -1,430 +1,963 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>FREE  BOOTSTRAP TEMPLATE - Relax </title>
-    <!--REQUIRED STYLE SHEETS-->
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONTAWESOME STYLE CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--ANIMATED FONTAWESOME STYLE CSS -->
-    <link href="assets/css/font-awesome-animation.css" rel="stylesheet" />
-     <!--PRETTYPHOTO MAIN STYLE -->
-    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-       <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    
+<title>Personal Home Page </title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- fonts -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'><!-- //fonts -->
+
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+<!-- skills -->
+<script src="js/pie-chart.js" type="text/javascript"></script>
+ <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#demo-pie-1').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+			
+			$('#demo-pie-4').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+            $('#demo-pie-5').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+            $('#demo-pie-6').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+        });
+    </script>
+<!-- skills -->
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+
 </head>
-<body >
-         <!-- NAV SECTION -->
-         <div class="navbar navbar-inverse navbar-fixed-top">
-       
+<body>
+<!-- banner -->
+<div class="header-top">
+	<div class="container">
+		<ul>
+			<li><a class="scroll" href="#about"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Resume</a></li>
+			<li><a class="scroll" href="#emailme"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email me</a></li>
+			<li><a href="javascript:window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li>
+			<li><a href="#portfolioModal9" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+				<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>My Photo</a></li>
+		</ul>
+	</div>
+</div>	
+<div class="header">
+	<div class="container">
+		<div class="col-md-8 header-left">
+			<div class="col-sm-5 pro-pic">
+				<img class="img-responsive" style="height:250px;width:300px; " src="images/pic1.jpg" alt="He's busy Right Now"/>
+			</div>
+			<div class="col-sm-5 pro-text">
+				<h1>Naveen Kumar</h1>
+				<p>B.Tech Information Technology</p>
+				<p>Cyber Security Expert & Researcher</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 header-right ">
+			<ul class="list-left">
+				<li>Email:</li>
+				<li>Website:</li>
+				<li>Phone no:</li>
+				<li>Address: </li>
+				<br><br><br><br><br>
+				
+			</ul>
+			<ul class="list-right">
+				<li><a href="mailto:naveen.sec.pro@gmail.com">naveen.sec.exp@gmail.com</a></li>
+				<li><a href="http://naveensecexp.github.io">naveensecexp.github.io</a></li>
+				<li>+91 7397640497</li>
+				<li> Kanchipuram, TamilNadu, India</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<h3 class="tittle">About Me</h3>
+		<p class="abt-para">Sed ut perspiciatis unde omnis iste natus error sit 
+		voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+		et quasi architecto beatae vitae dicta sunt explicabo. 
+		Nemo enim ipsam voluptatem quia voluptas sit aspernatur . </p>
+	</div>
+	<div class="col-md-6 abt-left ">
+		<h2>Education</h2>
+				<div class="accordion">
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-1">
+									<span>2014 - 2018</span> Anna Univ. Chennai
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-1" class="accordion-section-content">
+									<h6>Activites & Achievement</h6>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">National Level Symposium event organizer</a></li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">NSS Member</a></li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Open source community Member</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-2">
+									<span>2012 - 2014</span>Govt.CMS Hr.Sec.School 
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-2" class="accordion-section-content">
+									<h6>Activites & Achievement</h6>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">12 th State Board School Toper </a></li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">JRC Member</a></li>
+										
+									</ul>
+								</div>
+							</div>
+
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-3">
+									<span>2010 - 2012</span>Govt.CMS Hr.Sec.School  
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-3" class="accordion-section-content">
+									<h6>Activites & Achievement</h6>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">10 th State Board School Toper</a></li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">NSS Member</a></li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Vollybal Team Member</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							
+				</div>
+				<script>
+							jQuery(document).ready(function() {
+								function close_accordion_section() {
+									jQuery('.accordion .accordion-section-title').removeClass('active');
+									jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+								}
+
+								jQuery('.accordion-section-title').click(function(e) {
+									// Grab current anchor value
+									var currentAttrValue = jQuery(this).attr('href');
+
+									if(jQuery(e.target).is('.active')) {
+										close_accordion_section();
+									}else {
+										close_accordion_section();
+
+										// Add active class to section title
+										jQuery(this).addClass('active');
+										// Open up the hidden content panel
+										jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+									}
+
+									e.preventDefault();
+								});
+							});
+				</script>
+	</div>
+	<div class="col-md-6 abt-right ">
+		<div class="col-sm-4 abt-gd-left text-center">
+			<div id="demo-pie-1" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
+			<h4>Python</h4>
+		</div>
+		
+		<div class="col-sm-4 abt-gd-left text-center">		   
+			<div id="demo-pie-2" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
+			<h4>Java</h4>
+		</div>
+		<div class="col-sm-4 abt-gd-left text-center">		   
+			<div id="demo-pie-3" class="pie-title-center" data-percent="60"> <span class="pie-value"></span> </div>
+			<h4>Linux</h4>
+		</div>
+		
+		<div class="col-sm-4 abt-gd-left text-center">
+			<div id="demo-pie-4" class="pie-title-center" data-percent="25"> <span class="pie-value"></span> </div>
+			<h4>Cloud Tools</h4>
+		</div>
+		
+		<div class="col-sm-4 abt-gd-left text-center">		   
+			<div id="demo-pie-5" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
+			<h4>Security</h4>
+		</div>
+		<div class="col-sm-4 abt-gd-left text-center">		   
+			<div id="demo-pie-6" class="pie-title-center" data-percent="15"> <span class="pie-value"></span> </div>
+			<h4>Networking</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="clearfix"></div>
+</div>
+<!-- about -->
+<!-- education 
+<div class="employment">
+	<div class="container">
+		<h3 class="tittle ">Work Experience</h3>
+		<p class="abt-para ">Sed ut perspiciatis unde omnis iste natus error sit 
+		voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+		et quasi architecto beatae vitae dicta sunt explicabo. 
+		Nemo enim ipsam voluptatem quia voluptas sit aspernatur . </p>
+		<div class="col-md-6 employ-left">
+			<h4>01</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>Web Designer</h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>UI/UX Designer<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>02</h4>
+		</div>
+		<div class="col-md-6 employ-left ">
+			<h4>03</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>HTML Developer</h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>Photoshop<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>voluptatem accusantium doloremque laudantium, totam 
+		rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>04</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>-->
+<!-- education -->
+<!-- portfolio -->
+<div class="portfolio">
+	<div class="container">
+		<h3 class="tittle ">Portfolio</h3>
+			<div class="portfolio-grids">
+				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				<script type="text/javascript">
+									$(document).ready(function () {
+										$('#horizontalTab').easyResponsiveTabs({
+											type: 'default', //Types: default, vertical, accordion           
+											width: 'auto', //auto or any width like 600px
+											fit: true   // 100% fit in a container
+										});
+									});
+									
+				</script>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li> 
+							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Security</span></li> 
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Software Dev.</span></li> 
+						</ul>				  	 
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic4.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic5.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic14.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- //portfolio -->
+<!-- more skills -->
+<div class="more">
+	<div class="container">
+		<h3 class="tittle ">Other Skills</h3>
+		<div class="col-md-6 skill-left ">
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success" style="width: 30%">Python Web Dev.
+					<span class="sr-only">55% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning " style="width: 45%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>55%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success1" style="width: 30%">Ruby Web Dev.
+					<span class="sr-only">30% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning1" style="width: 30%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>30%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success3" style="width: 30%">Penetration Tester
+					<span class="sr-only">45% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning3 " style="width: 45%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>45%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success2" style="width: 30%">Network Admin.
+					<span class="sr-only">65% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning2" style="width: 50%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>65%</p>
+				  <div class="clearfix"></div>
+			</div>
+			
+			<div class="progress no-marg">
+				  <div class="progress-bar progress-bar-success4" style="width: 30%">System Security R&D
+					<span class="sr-only">45% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning4" style="width: 45%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>45%</p>
+				  <div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="col-md-6 skill-right ">
+			<div class="scrollbar scrollbar1">
+				<div class="more-gds">
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+					</div>
+					<div class="col-sm-9 more-right">
+						<h4>Cloud Tools</h4>
+						<p>Specialized in various cloud deployment tools, such as OpenNebula, OpenStack on various platforms. </p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-9 more-right2">
+						<h4>Mobile Applications</h4>
+						<p>Academic excellence in mobile app creation using Android studio and developed many basic applications.</p>
+					</div>
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span>
+					</div>
+					<div class="col-sm-9 more-right">
+						<h4>Data Minning</h4>
+						<p>Basic knowledge of various data mining algorithms using RapidMiner and Weka tools.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-9 more-right2">
+						<h4>Software Developemnt</h4>
+						<p>Mini project using python and java are validated academic guides.</p>
+					</div>
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+					</div>
+					<div class="col-sm-9 more-right">
+						<h4>DBMS Queries</h4>
+						<p>Mysql servers deployment and monitoring user activies and data base quries for efficient retrival of data.</p>
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-gds yes_marg">
+					<div class="col-sm-9 more-right2">
+						<h4>Linux & Windows</h4>
+						<p>3 years experience in working various environments such as RedHat,Ubuntu and windows platforms.</p>
+					</div>
+					<div class="col-sm-3 more-left">
+						<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- more skills -->
+<!-- contact -->
+<div id="emailme" class="contact">
+	<div class="container">
+		<h3 class="tittle">Contact</h3>
+		<div class="col-md-6 contact-left ">
+			<div class="horizontal-tab">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
+					<li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Hire me</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active in" id="tab1">
+						<div class="contact-form">
+							<ul>
+								<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Kanchipuram, TamilNadu, <span>India</span></li>
+								<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:naveen.sec.pro@gmail.com">naveen.sec.pro@gmail.com</a></li>
+								<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+92 7397640497</li>
+							</ul>
+							<form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+								<input type="submit" value="Submit" >
+							</form>
+						</div>
+					 
+					</div>
+					<div class="tab-pane" id="tab2">
+					  <div class="contact-form">
+							<form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Description...</textarea>
+								<input id="uploadFile" placeholder="Choose File" disabled="disabled" />
+									<div class="fileUpload btn btn-primary">
+										<span>Upload</span>
+										<input id="uploadBtn" type="file" class="upload" />
+									</div>
+								<input type="submit" value="Send Request" >
+							</form>
+							<script>
+								document.getElementById("uploadBtn").onchange = function () {
+									document.getElementById("uploadFile").value = this.value;
+								};
+							</script>
+						</div>
+					</div>
+					
+				</div>
+            </div>
+		</div>
+		<div class="col-md-6 contact-right ">
+			
+		<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15560.088606799198!2d79.6622511697684!3d12.84184502081347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c3968e1b4bad%3A0x2c91a93db054a4af!2sSirukaveripakkam%2C+Tamil+Nadu+631502!5e0!3m2!1sen!2sin!4v1504446220435" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">&copy 2017 Resume. All rights reserved | Design by <a href="http://www.naveensecexp.github.io">Naveen Kumar</a></p>
+	</div>
+</div>
+<!-- //contact -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">YOUR LOGO</a>
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home-sec">HOME</a></li>
-                    <li><a href="#services-sec">SERVICES</a></li>
-                     <li><a href="#price-sec">PRICING</a></li>
-                       <li><a href="#port-sec">PORTFOLIO</a></li>
-                    <li><a href="#contact-sec">CONTACT</a></li>
-                </ul>
-            </div>
-           
         </div>
     </div>
-     <!--END NAV SECTION -->
-    
-    <!--HOME SECTION-->
-    <div id="home-sec">
-
-   
-    <div class="container"  >
-        <div class="row text-center">
-            <div  class="col-md-12" >
-                <span class="head-main" >Go Relax Template</span>
-                <h2 class="head-sub-main">Download And Get Relaxed</h2>
-                <h3 class="head-last col-md-4 col-md-offset-4  col-sm-6 col-sm-offset-3">Lorem ipsum dolor sit ametLorem</h3>
-         
-                 
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
             </div>
-            <div class="col-md-12 col-sm-12">
-               
-                <a  href="#services-sec">
-                 <i class="fa fa-crosshairs fa-5x go-marg"></i> 
-                    </a>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-         </div>
-    
-    <!--END HOME SECTION-->  
-
-    <!--SERVICES SECTION-->    
-    <section  id="services-sec">
-        <div class="container">
-            <div class="row ">
-                <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs "></i> Our Services  </h1>
-                
-               
-                <div class="text-center g-pad-bottom">
-                    <div class="col-md-4 col-sm-4">
-                            <i class="fa fa-fire-extinguisher fa-5x faa-vertical animated c-main "></i>
-                            <h4>Free To Use </h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                            <i class="fa fa-coffee fa-5x faa-ring animated c-main "></i>
-                            <h4>100%  Responsive </h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            
-                    </div>
-                   
-                    <div class="col-md-4 col-sm-4">
-                            <i class="fa fa-gavel fa-5x faa-shake animated c-main "></i>
-                            <h4>Clean & Customizable </h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                          
-                    </div>
-                </div>
-                  </div>
-                <div class="row">
-                  
-                    <div class="col-md-4 col-sm-4">
-                          <div class="panel panel-default">
-                       
-                        <div class="panel-body">
-                             <h4 class="adjst">Lorem ipsum dolor sit amet </h4>
-                            <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                </p>
-                             
-                            
-                        </div>
-                    </div> 
-                            
-                    </div>
-                   <div class="col-md-4 col-sm-4">
-                          <div class="panel panel-default">
-                       
-                        <div class="panel-body">
-                             <h4 class="adjst">Lorem ipsum dolor sit amet </h4>
-                            <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                </p>
-                             
-                            
-                        </div>
-                    </div> 
-                            
-                    </div>
-                     <div class="col-md-4 col-sm-4">
-                          <div class="panel panel-default">
-                       
-                        <div class="panel-body">
-                             <h4 class="adjst">Lorem ipsum dolor sit amet </h4>
-                            <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                                </p>
-                             
-                            
-                        </div>
-                    </div> 
-                            
-                    </div>
-                </div>
-          
-        </div>
-    </section>
-    <!--END SERVICES SECTION-->
-  
-     <!--PRICE SECTION-->
-    <section id="price-sec">
-        <div class="container">
-            <div class="row g-pad-bottom">
-                <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs "></i> Our Pricing </h1>
-                
-                  
-                <div class="col-md-12 text-center ">
-                    <div class="col-md-4 col-sm-4">
-                        <ul class="plan">
-                             
-                            <li class="plan-head">BASIC <i class="fa fa-dot-circle-o  c-pr-i"></i> PLAN</li>
-                           
-                            <li><strong>52</strong> Emails</li>
-                            <li><strong>50 GB</strong> Space</li>
-                            <li><strong>Free</strong> Support</li>
-                             <li class="main-price">$99 <small> * only</small></li>
-                            <li class="bottom">
-                                <a href="#" class="btn btn-success btn-lg ">BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <ul class="plan">
-                            <li class="plan-head">MEDIUM <i class="fa fa-dot-circle-o  c-pr-i"></i> PLAN</li>
-                            
-                            <li><strong>52</strong> Emails</li>
-                            <li><strong>50 GB</strong> Space</li>
-                            <li><strong>Free</strong> Support</li>
-                            <li class="main-price">$199<small> * only</small></li>
-                            <li class="bottom">
-                                <a href="#" class="btn btn-primary btn-lg ">BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <ul class="plan">
-                            <li class="plan-head">VALUE <i class="fa fa-dot-circle-o  c-pr-i"></i> PLAN</li>
-                         
-                            <li><strong>52</strong> Emails</li>
-                            <li><strong>50 GB</strong> Space</li>
-                            <li><strong>Free</strong> Support</li>
-                               <li class="main-price">$299 <small> * only</small></li>
-                            <li class="bottom">
-                                <a href="#" class="btn btn-danger btn-lg">BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                
-
-                </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
             </div>
-
-
         </div>
-    </section>
-    <!-- END PRICE SECTION-->
-
-     <!-- PORTFOLIO SECTION-->
-   <section id="port-sec">
-       <div class="container">
-           <div class="row g-pad-bottom" >
-                 <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i> Our Portfolio  </h1>
-               
-                <div class="col-md-10 col-md-offset-1 col-sm-12" >
-                    <ul class="portfolio-items col-3">
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t1.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b1.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                       
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t2.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b2.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t3.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b3.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t4.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b4.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t5.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b5.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                        <li class="portfolio-item ">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t6.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b6.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                        <li class="portfolio-item ">
-                           <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t7.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b7.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                        <li class="portfolio-item ">
-                           <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t8.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b8.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                         <li class="portfolio-item">
-                            <div class="item-main">
-                                <div class="portfolio-image">
-                                    <img src="assets/img/portfolio/thumb/t9.png" alt="">
-                                    <div class="overlay">
-                                        <a class="preview btn btn-danger" title="Image Title Here" href="assets/img/portfolio/big/b9.png"><i class=" fa fa-eye"></i></a>
-                                    </div>
-                                </div>
-                                <h5>Lorem ipsum dolor sit amet</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-           </div>
-       </div>
-   </section>
-     <!-- END PORTFOLIO SECTION-->
-    <!--CONTACT SECTION-->
-    
-    <section  id="contact-sec">
         <div class="container">
-             
-            <div class="row g-pad-bottom">
-                  <h1 class="g-pad-bottom">  <i class="fa fa-crosshairs"></i> Contact Info  </h1>
-                
-                  
-                <div class="col-md-6 ">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                 
-                    <p>
-                         <strong> Address: </strong> &nbsp;Newyork City, Your Country, Pin-000000.  
-                        <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.              
-                    </p>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 ">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6 ">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Email address">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 ">
-                                <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Submit Request</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                   <iframe class="cnt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999841.293321206!2d-75.80920404999999!3d42.75594204999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York!5e0!3m2!1sen!2s!4v1395313088825" s ></iframe>
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--END CONTACT SECTION-->
-
-   
-
-    <!--FOOTER SECTION -->
-    <div id="footer">
-        2014 www.yourdomain.com | All Right Reserved  
-         
     </div>
-    <!-- END FOOTER SECTION -->
-
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <script src="assets/plugins/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="assets/plugins/bootstrap.min.js"></script>  
-     <!-- ISOTOPE SCRIPT   -->
-    <script src="assets/plugins/jquery.isotope.min.js"></script>
-    <!-- PRETTY PHOTO SCRIPT   -->
-    <script src="assets/plugins/jquery.prettyPhoto.js"></script>    
-    <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
 
 </body>
 </html>
